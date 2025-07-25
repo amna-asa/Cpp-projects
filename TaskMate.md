@@ -314,7 +314,7 @@ int main() {
             cin >> username;
 
             if (isUsernameTaken(username)) {
-                cout << "❌ This username is already taken.\n";
+                cout << "This username is already taken.\n";
                 cout << "Here are some suggestions:\n";
                 for (const string& suggestion : suggestUsernames(username)) {
                     cout << " - " << suggestion << endl;
@@ -323,7 +323,7 @@ int main() {
             }
 
             if (!containsDigitOrSpecial(username)) {
-                cout << "⚠️ Your username must include at least one number or special character.\n";
+                cout << " Your username must include at least one number or special character.\n";
                 cout << "Here are some better suggestions:\n";
                 for (const string& suggestion : suggestUsernames(username)) {
                     cout << " - " << suggestion << endl;
@@ -334,7 +334,7 @@ int main() {
             cout << "Choose password: ";
             cin >> password;
             userManager.signup(username, password);
-            cout << "✅ Signup successful! You can now login.\n";
+            cout << "Signup successful! You can now login.\n";
         }
         else if (choice == 3) {
             return 0;
