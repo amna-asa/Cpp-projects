@@ -1,4 +1,79 @@
-﻿#include <iostream>
+# **TaskMate**
+*A Console-Based Task Manager with User Authentication*
+
+---
+
+## 📌 Project Overview
+**TaskMate** is a C++ console application that allows multiple users to manage their daily tasks after logging in. Each user has a personalized task list saved in a separate file. It combines file handling, user authentication, and structured data display using standard C++ libraries.
+
+---
+
+## 🔐 User Management
+- Users can **Sign Up** or **Log In** using a username and password.  
+- Validates uniqueness and enforces usernames with digits or special characters.  
+- Stores credentials in a text file: `users.txt`.
+
+---
+
+## 📂 Task Management Features
+Each user can perform the following actions:
+
+- **Add Task**  
+  Input task title, description, priority, and due date.
+
+- **Display Tasks**  
+  Shows tasks in a formatted table (No., Title, Date, Priority).
+
+- **Edit Task**  
+  Options to update:
+  - Title  
+  - Description  
+  - Priority  
+  - Date  
+  - Or mark a task as completed (which deletes it).
+
+---
+
+## 💾 Data Storage
+- User credentials → `users.txt`  
+- Tasks → `<username>_tasks.txt`  
+- File handling is done using `ifstream` and `ofstream`.
+
+---
+
+## ⚙️ Technologies Used
+- **Language:** C++  
+- **Libraries:**  
+  - `<iostream>`, `<fstream>` – Input/Output and File Handling  
+  - `<vector>` – Dynamic list of tasks  
+  - `<string>`, `<iomanip>`, `<cctype>` – String operations and formatting
+
+---
+
+## 🧪 Example Flow
+1. User opens program → signs up or logs in  
+2. Loads their existing tasks (if any)  
+3. Can add, view, or modify tasks  
+4. All changes saved to file on exit
+
+---
+![A](/C++%20images/1.PNG)
+
+---
+
+![A](/C++%20images/2.PNG)
+
+---
+
+![A](/C++%20images/3.PNG)
+
+---
+
+![A](/C++%20images/4.PNG)
+
+
+```
+#include <iostream>
 #include <fstream>
 #include <vector>
 #include <string>
@@ -311,3 +386,4 @@ int main() {
         }
     }
 }
+```
