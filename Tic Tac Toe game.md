@@ -30,13 +30,13 @@ The game supports **two players** taking alternate turns by entering a number fr
 > Below are some snapshots of the game in action:
 
 ### Initial Setup
-![A](/C++%20images/1.PNG)
+![A](/C++%20images/11.PNG)
 
 ### Mid-game Board
-![A](/C++%20images/2.PNG)
+![A](/C++%20images/22.PNG)
 
 ### Game End or Win Screen
-![A](/C++%20images/3.PNG)
+![A](/C++%20images/33.PNG)
 
 ```C++
 
